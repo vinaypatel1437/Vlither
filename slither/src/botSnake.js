@@ -6,12 +6,12 @@ BotSnake.prototype = Object.create(Snake.prototype);
 BotSnake.prototype.constructor = BotSnake;
 BotSnake.prototype.tempUpdate = BotSnake.prototype.update;
 BotSnake.prototype.update = function() {
-    var headX = 0;
-    var headY = 0;
-        socket.on('uppdate',(msg)=>{
-            headX=msg.x;
-            headY=msg.y;
-        })
+    var headX = 1;
+    var headY = 20;
+//         socket.on('uppdate',(msg)=>{
+//             headX=msg.x;
+//             headY=msg.y;
+//         })
         this.head.body.setZeroRotation();
         if (Util.randomInt(headX,headY) == 1) {
             this.trend *= -1;
