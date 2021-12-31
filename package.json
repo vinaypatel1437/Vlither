@@ -1,5 +1,5 @@
 {
-  "name": "neww",
+  "name": "Vlither",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/vinaypatel1437/Vlither.git"
   },
+  "keywords":[],
   "author": "",
   "license": "ISC",
   "dependencies": {
