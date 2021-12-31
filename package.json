@@ -4,8 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start":"node server"
+  },
+  "devDependencies":{},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaypatel1437/Vlither.git"
   },
   "author": "",
   "license": "ISC",
