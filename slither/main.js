@@ -1,5 +1,5 @@
 const useer = document.getElementById('user');
-const socket = io();
+const socket = io.connect("https://vlitther.herokuapp.com/");
 // const {namee}= Qs.parse(location.search,{
 //     ignoreQueryPrefix: true
 // })
