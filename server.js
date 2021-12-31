@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const http = require("http");
 const { userJoin, getCurrentUser, userLeave, getRoomUsers,getRoomUsers2 } = require("./slither/users")
 const socketio = require("socket.io");
@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server)
 const room = "one";
-app.use(express.static(path.join((__dirname, 'slither'))));
+app.use(express.static('slither'));
 const port = 3000 || process.env.PORT;
 io.on('connection', socket => {
     socket.emit("message", "Welcome to Vlither.io");
