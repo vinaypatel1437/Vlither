@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = socketio(server)
 const room = "one";
 app.use(express.static('slither'));
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000 ;
 io.on('connection', socket => {
     socket.emit("message", "Welcome to Vlither.io");
     socket.on('join', ({namee,points,score}) => {
